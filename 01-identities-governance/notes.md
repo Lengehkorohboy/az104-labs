@@ -169,6 +169,21 @@ Regularly review role assignments.
 Use Administrative Units for delegated administration.
 Avoid assigning Global Administrator unnecessarily.
 
+### Cleanup
+
+Delete User
+Navigate to Users
+Select az104-labuser1 and az104-labuser2
+Delete
+Delete Security Group
+Navigate to Groups
+Open IT Lab administrator
+Delete Group
+Delete Administrative Unit
+Navigate to Administrative Units
+Select unit
+Delete
+
 ### Lesson Learned
 
 User not appearing in group.
