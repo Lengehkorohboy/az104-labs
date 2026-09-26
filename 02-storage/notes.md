@@ -180,8 +180,6 @@ In this task, you will create a blob container and upload an image. Blob contain
 
 1. Open another InPrivate browser window and navigate to the Blob SAS URL you copied in the previous step.
 
-   > **Note**: You should be able to view the content of the file.
-
 ## Task 3: Create and configure an Azure File storage
 
 In this task, you will create and configure Azure File shares. You will use Storage Browser to manage the file share.
@@ -244,12 +242,6 @@ In this task, you will create and configure Azure File shares. You will use Stor
 
 1. Be sure to **Save** your changes.
 
-   > **Note:** The storage account should now only be accessed from the virtual network you just created.
-
-1. Select the **Storage browser** and **Refresh** the page. Navigate to your file share or blob content.
-
-   > **Note:** You should receive a message _not authorized to perform this operation_. You are not connecting from the virtual network. It may take a couple of minutes for this to take effect. You may still be able to view the file share, but not the files or blobs in the storage account.
-
 ![Screenshot unauthorized access.](../Screenshots/az104-lab02-notauthorized.png)
 
 - Provide an Azure PowerShell script to create a storage account with a blob container.
@@ -261,13 +253,3 @@ In this task, you will create and configure Azure File shares. You will use Stor
 - [Guided Project - Azure Files and Azure Blobs](https://learn.microsoft.com/training/modules/guided-project-azure-files-azure-blobs/). Practice storing business data securely by using Azure Blob Storage and Azure Files.
 - [Create an Azure Storage account](https://learn.microsoft.com/training/modules/create-azure-storage-account/). Create an Azure Storage account with the correct options for your business needs.
 - [Manage the Azure Blob storage lifecycle](https://learn.microsoft.com/training/modules/manage-azure-blob-storage-lifecycle). Learn how to manage data availability throughout the Azure Blob storage lifecycle.
-
-## Key takeaways
-
-Congratulations on completing the lab. Here are the main takeaways for this lab.
-
-- An Azure storage account contains all your Azure Storage data objects: blobs, files, queues, and tables. The storage account provides a unique namespace for your Azure Storage data that is accessible from anywhere in the world over HTTP or HTTPS.
-- Azure storage provides several redundancy models including Locally redundant storage (LRS), Zone-redundant storage (ZRS), and Geo-redundant storage (GRS).
-- Azure blob storage allows you to store large amounts of unstructured data on Microsoft's data storage platform. Blob stands for Binary Large Object, which includes objects such as images and multimedia files.
-- Azure file Storage provides shared storage for structured data. The data can be organized in folders.
-- Immutable storage provides the capability to store data in a write once, read many (WORM) state. Immutable storage policies can be time-based or legal-hold.
